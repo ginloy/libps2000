@@ -13,6 +13,7 @@ pkgs.stdenv.mkDerivation {
 
   buildInputs = with pkgs; [
     libusb1
+    pkgs.stdenv.cc.cc.lib
   ];
 
   sourceRoot = ".";
